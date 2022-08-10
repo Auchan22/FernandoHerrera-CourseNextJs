@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Archivos realizados mientras aprendía de la pagina de Next Js
+
+/db
+/pages/person
+ruta.tsx
+Teoria.md
