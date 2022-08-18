@@ -1,14 +1,18 @@
+import { Button, Loading, Spacer } from '@nextui-org/react';
 import type { NextPage } from 'next';
-import Layout from '../components/Layouts/Layout';
+import { Layout } from '../components/layouts/';
 
 const Home: NextPage = () => {
   return (
-    <Layout page={'Home'}>
-      <h1 className='title'>Estoy en Home</h1>
-
-      <p className='description'>
-        Get started by editing <code className='code'>pages/index.tsx</code>
-      </p>
+    <Layout title=''>
+      <h1>Hola Mundo</h1>
+      <Button light bordered size='lg' color='error'>
+        Botonacio Loco
+      </Button>
+      <Spacer y={0.5} />
+      <Button rounded size='md' flat bordered color='warning'>
+        <Loading type='points' size='lg' />
+      </Button>
     </Layout>
   );
 };
