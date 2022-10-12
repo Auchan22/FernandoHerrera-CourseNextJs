@@ -1,5 +1,6 @@
 import { Button, Container } from '@nextui-org/react';
 import HamburgerButton from './HamburgerButton';
+import FavoritesButton from './FavoritesButton';
 import Logo from './Logo';
 
 export const Navbar: React.FC = () => {
@@ -18,6 +19,7 @@ export const Navbar: React.FC = () => {
     >
       <Logo />
       <HamburgerButton />
+      <FavoritesButton />
     </Container>
   );
 };

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Navbar } from '../ui';
 
 interface Props {
-  children: JSX.Element[];
+  children: JSX.Element[] | JSX.Element;
   title?: string;
 }
 
@@ -20,7 +20,6 @@ export const Layout: React.FC<Props> = ({ children, title }) => {
         <meta name='keywords' content={`${title}, pokemon, pokedex`} />
       </Head>
       <Navbar />
-
       <Container
         display='flex'
         direction='column'
